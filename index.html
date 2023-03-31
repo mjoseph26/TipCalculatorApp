@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" href="./style.css" />
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -17,36 +18,41 @@
 <body>
   <main>
     <header>
-      <h1>Splitter</h1>
+      <h1>Spli<br>tter</h1>
     </header>
-    
-    <section>
-      <label for="total">Bill</label>
-      <input type="number" id="total" name="total"/>
-    </section>
-    <section>
-      <h4>Select Tip%</h4>
-      <button type="button">5%</button>
-      <button type="button">10%</button>
-      <button type="button">15%</button>
-      <button type="button">25%</button>
-      <button type="button">50%</button>
-      <button type="button">Custom</button>
-    </section>
-    <section>
-      <label for="people">Number of People</label>
-      <input type="number" id="people" name="people"/>
-    </section>
-    <section>
-      <h4>Tip Amount</h4>
-      <p>/ person</p>
-      <h4>Total</h4>
-      <p>/ person</p>
-      <button>Reset</button>
-    </section>
+    <div class="container">
+      <section class="bill-amount">
+        <label for="total">Bill</label>
+        <input type="number" id="total" name="total" value="0"/>
+      </section>
+      <section>
+        <h6>Select Tip%</h6>
+        <div class="tip-amount">
+          <button type="button">5%</button>
+          <button type="button">10%</button>
+          <button type="button">15%</button>
+          <button type="button">25%</button>
+          <button type="button">50%</button>
+          <button type="button">Custom</button>
+        </div>
+        
+      </section>
+      <section>
+        <label for="people">Number of People</label>
+        <input type="number" id="people" name="people" value="0"/>
+      </section>
+      <section class="summary">
+        <div class="tip-display">
+          <h6>Tip Amount</h6>
+          <p>/ person</p>
+        </div>
+        <div class="total-display">
+          <h6>Total</h6>
+          <p>/ person</p>
+        </div>
+        <button>Reset</button>
+      </section>
+    </div>
   </main>
-  <footer>
-    <h4>Made By Mathew</h4>
-  </footer>
 </body>
 </html>
