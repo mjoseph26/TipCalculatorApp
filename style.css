@@ -90,11 +90,7 @@ input[type=button] {
 }
 
 input[type=button]:hover{
-    background-color: var(--Grayish-cyan);
-}
-
-input[type=button]:focus{
-    background-color: var(--Strong-cyan);
+    background-color: var(--Light-grayish-cyan);
 }
 
 input[type=number]:focus{
@@ -112,6 +108,12 @@ input[type=number]:focus{
 
 .numPeople{
     margin-top:20px;
+}
+
+#alert{
+    margin-left: 15px;
+    color: orange;
+    font-size:16px;
 }
 
 .summary{
@@ -134,12 +136,9 @@ input[type=number]:focus{
 }
 
 .reset:hover, .reset:focus{
-    background-color: var(--Grayish-cyan);
+    background-color: var(--Light-grayish-cyan);
 }
 
-.reset:focus{
-    transition: background-color 1s;
-}
 
 .summary h6{
     color: var(--White);
@@ -247,11 +246,7 @@ p.price{
     }
 
     input[type=button]:hover{
-        background-color: var(--Grayish-cyan);
-    }
-
-    input[type=button]:focus{
-        background-color: var(--Strong-cyan);
+        background-color: var(--Light-grayish-cyan);
     }
 
     input[type=number]:focus{
@@ -269,6 +264,12 @@ p.price{
  
     .numPeople{
         margin-top:20px;
+    }
+
+    #alert{
+        margin-left: 15px;
+        color: orange;
+        font-size:16px;
     }
 
     .summary{
@@ -291,13 +292,8 @@ p.price{
     }
 
     .reset:hover, .reset:focus{
-        background-color: var(--Grayish-cyan);
+        background-color: var(--Light-grayish-cyan);
     }
-
-    .reset:focus{
-        transition: background-color 1s;
-    }
-
     .summary h6{
         color: var(--White);
         padding: 0;
@@ -326,7 +322,8 @@ p.price{
        
 }
 
-@media screen and (min-width:1440px){
+/*@media screen and (min-width:1440px) Commented for testing purposes*/ 
+@media screen and (min-width:750px){
     html {
         box-sizing: border-box;
     }
@@ -400,13 +397,14 @@ p.price{
         grid-template-rows:repeat(3,auto);
         gap: 0 30px;
         background-color: var(--White);
-        padding:37px 37px;
+        padding: 18px 37px 36px 37px;
         border-radius: 20px;
     }
 
     .bill-amount{
         grid-row: 1 / 2;
         grid-column: 1 / 5;
+        margin:10px 0px;
     }
 
     .tip-select{
@@ -420,6 +418,14 @@ p.price{
         grid-column: 1 / 5;
     }
 
+    #alert{
+        margin-left: 15px;
+        color: orange;
+        font-size:16px;
+    }
+
+    
+
     .summary{
         grid-row: 1 / 4;
         grid-column: 5 / 9;
@@ -429,7 +435,7 @@ p.price{
         display:flex;
         flex-direction: column;
         flex-wrap: wrap;
-        gap: 40px 0px;
+        gap: 50px 0px;
     }
     
     input[type=button] {
@@ -445,11 +451,7 @@ p.price{
     }
 
     input[type=button]:hover{
-        background-color: var(--Grayish-cyan);
-    }
-
-    input[type=button]:focus{
-        background-color: var(--Strong-cyan);
+        background-color: var(--Light-grayish-cyan);
     }
 
     input[type=number]:focus{
@@ -476,16 +478,13 @@ p.price{
         font-weight: var(--weight);
         border:none;
         border-radius: 5px;
-        margin-top:5.2rem;
+        margin-top:75px;
     }
 
     .reset:hover, .reset:focus{
-        background-color: var(--Grayish-cyan);
+        background-color: var(--Light-grayish-cyan);
     }
 
-    .reset:focus{
-        transition: background-color 1s;
-    }
 
     .summary h6{
         color: var(--White);
