@@ -4,8 +4,8 @@ const tipDisplay = document.getElementById('tip-price');
 const totalDisplay = document.getElementById('total-price');
 const custom = document.getElementById('custom');
 let arr = [];
-
 const tips = document.querySelectorAll('input[type=button]');
+
 let prevButton = null;
 tips.forEach(tip => {
     tip.addEventListener('click', (e) => {
@@ -105,6 +105,10 @@ reset[0].addEventListener('click', function(){
     tipDisplay.textContent = '$0.00';
     totalDisplay.textContent = '$0.00';
     arr = []; //empty the array
+
+    tips.forEach(tip => {
+        tip.style.backgroundColor = '';
+    })
 });
 
 

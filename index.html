@@ -24,7 +24,7 @@
     <div class="container">
       <section class="bill-amount">
         <label for="total">Bill</label>
-        <span id="alert"></span>
+        <span id="billAlert"></span>
         <input type="number" id="total" class="white-inp dollar-inp" name="total" placeholder="0"/>
       </section>
       <section class="tip-select">
@@ -35,7 +35,7 @@
           <input type="button" value="15%"/>
           <input type="button" value="25%"/>
           <input type="button" value="50%"/>
-          <input type="number" class="white-inp" placeholder="Custom" aria-label="custom tip percentage"/>
+          <input type="number" id="custom" class="white-inp" placeholder="Custom" aria-label="custom tip percentage"/>
         </div>
       </section>
       <section class="numPeople">
@@ -44,25 +44,29 @@
         <input type="number" id="people" class="white-inp person-inp" name="people" placeholder="0"/>
       </section>
       <section class="summary">
-        <div class="tip-display">
-          <div class="left">
-            <h6>Tip Amount</h6>
-            <p>/ person</p>
+        <div class="top">
+          <div class="tip-display">
+            <div class="left">
+              <h6>Tip Amount</h6>
+              <p>/ person</p>
+            </div>
+            <div class="right">
+              <p id="tip-price" class="price">$0.00</p>
+            </div>
           </div>
-          <div class="right">
-            <p id="tip-price" class="price">$0.00</p>
+          <div class="total-display">
+            <div class="left">
+              <h6>Total</h6>
+              <p>/ person</p>
+            </div>
+            <div class="right">
+              <p id="total-price" class="price">$0.00</p>
+            </div>
           </div>
         </div>
-        <div class="total-display">
-          <div class="left">
-            <h6>Total</h6>
-            <p>/ person</p>
-          </div>
-          <div class="right">
-            <p id="total-price" class="price">$0.00</p>
-          </div>
+        <div class="bottom">
+          <button class="reset">Reset</button>
         </div>
-        <button class="reset">Reset</button>
       </section>
     </div>
   </main>

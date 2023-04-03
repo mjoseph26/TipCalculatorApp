@@ -75,6 +75,7 @@ input::placeholder{
     background-color: var(--White);
     padding:30px 15px;
     border-radius: 20px 20px 0 0;
+    box-shadow: 5px 5px 10px var(--Dark-grayish-cyan);
 }
 
 input[type=button] {
@@ -231,6 +232,7 @@ p.price{
         background-color: var(--White);
         padding:30px 15px;
         border-radius: 20px 20px 0 0;
+        box-shadow: 5px 5px 10px var(--Dark-grayish-cyan);
     }
     
     input[type=button] {
@@ -399,6 +401,7 @@ p.price{
         background-color: var(--White);
         padding: 18px 37px 36px 37px;
         border-radius: 20px;
+        box-shadow: 5px 5px 10px var(--Dark-grayish-cyan);
     }
 
     .bill-amount{
@@ -435,7 +438,7 @@ p.price{
         display:flex;
         flex-direction: column;
         flex-wrap: wrap;
-        gap: 50px 0px;
+        justify-content: space-between;
     }
     
     input[type=button] {
@@ -478,7 +481,7 @@ p.price{
         font-weight: var(--weight);
         border:none;
         border-radius: 5px;
-        margin-top:75px;
+        margin-bottom:18px;
     }
 
     .reset:hover, .reset:focus{
@@ -500,7 +503,7 @@ p.price{
     }
 
     .tip-display, .total-display{
-        margin-bottom: 30px;
+        margin-bottom: 50px;
         display:flex;
         align-items: center;
         justify-content: space-between;
