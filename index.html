@@ -25,7 +25,7 @@
       <section class="bill-amount">
         <label for="total">Bill</label>
         <span id="billAlert"></span>
-        <input type="number" id="total" class="white-inp dollar-inp" name="total" placeholder="0"/>
+        <input type="number" min='0' id="total" class="white-inp dollar-inp" name="total" placeholder="0"/>
       </section>
       <section class="tip-select">
         <p class="tip-title">Select Tip%</p>
@@ -35,13 +35,13 @@
           <input type="button" value="15%"/>
           <input type="button" value="25%"/>
           <input type="button" value="50%"/>
-          <input type="number" id="custom" class="white-inp" placeholder="Custom" aria-label="custom tip percentage"/>
+          <input type="number" id="custom" min='0' class="white-inp" placeholder="Custom" aria-label="custom tip percentage"/>
         </div>
       </section>
       <section class="numPeople">
         <label for="people">Number of People</label>
-        <span id="alert"></span>
-        <input type="number" id="people" class="white-inp person-inp" name="people" placeholder="0"/>
+        <span id="alert" aria-hidden="true"></span>
+        <input type="number" id="people" min='0' class="white-inp person-inp" name="people" placeholder="0"/>
       </section>
       <section class="summary">
         <div class="top">

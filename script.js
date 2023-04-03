@@ -73,11 +73,13 @@ people.addEventListener('keyup',() => {
 });
 
 function isReady(){
-    if(arr.length < 3){
-        return false;
+    //if(arr.length < 3){
+    if(total.value !== '' && arr[1] !== '' && people.value !== ''){
+        return true;
+        console.log('All Values Provided');
     }
     else{
-        return true;
+        return false;
     }
 }
 
