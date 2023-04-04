@@ -114,7 +114,7 @@ input[type=number]:focus{
 #alert{
     margin-left: 15px;
     color: orange;
-    font-size:16px;
+    font-size:10px;
 }
 
 .summary{
@@ -164,7 +164,7 @@ input[type=number]:focus{
 
 p.price{
     color:var(--Strong-cyan);
-    font-size: 30px;
+    font-size: 25px;
 }
 
 
@@ -271,7 +271,7 @@ p.price{
     #alert{
         margin-left: 15px;
         color: orange;
-        font-size:16px;
+        font-size:10px;
     }
 
     .summary{
@@ -319,7 +319,7 @@ p.price{
 
     p.price{
         color:var(--Strong-cyan);
-        font-size: 30px;
+        font-size: 25px;
     }
        
 }
@@ -422,8 +422,9 @@ p.price{
     }
 
     #alert{
+        margin-left: 0px;
         color: orange;
-        font-size:16px;
+        font-size:10px;
     }
 
     
@@ -511,6 +512,6 @@ p.price{
 
     p.price{
         color:var(--Strong-cyan);
-        font-size: 30px;
+        font-size: 25px;
     }
 }
