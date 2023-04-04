@@ -90,6 +90,12 @@ input[type=button] {
     text-align: center;
 }
 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 input[type=button]:hover{
     background-color: var(--Light-grayish-cyan);
 }
@@ -245,6 +251,12 @@ p.price{
         font-weight: 700;
         padding:5px;
         text-align: center;
+    }
+
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
     }
 
     input[type=button]:hover{
@@ -451,6 +463,12 @@ p.price{
         font-weight: 700;
         padding:5px;
         text-align: center;
+    }
+
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
     }
 
     input[type=button]:hover{
